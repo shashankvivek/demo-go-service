@@ -16,7 +16,7 @@ spec:
       containers:
         - name: hello-app
           # replace qwiklabs-gcp-02-c224118b300f with PROJECT_ID
-          image: gcr.io/qwiklabs-gcp-02-c224118b300f/demo-app
+          image: gcr.io/qwiklabs-gcp-01-e01d9484888e/demo-app
           args: [ "--scheme", "http", "--host", "0.0.0.0", "--port", "8080" ]
           # This app listens on port 8080 for web traffic by default.
           ports:
