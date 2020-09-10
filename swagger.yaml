@@ -1,0 +1,59 @@
+swagger: '2.0'
+info:
+  version: '1.0.0'
+  title: demo
+schemes: [http]
+host: demo-app
+basePath: /v1
+consumes: [application/json]
+produces: [application/json]
+paths:
+  /categories:
+    get:
+      tags: [menu]
+      operationId: CategoryList
+      responses:
+        200:
+          description: 'Get Category to show menu'
+          schema:
+            $ref: '#/definitions/Categories'
+        400:
+          description: Bad Request
+        404:
+          description: Categories Not Found
+        500:
+          schema:
+            type: string
+          description: Server Error
+definitions:
+  Categories:
+    type: array
+    items:
+      $ref: '#/definitions/Category'
+  Category:
+    type: object
+    properties:
+      bcId:
+        type: integer
+      bcName:
+        type: string
+      bcImageUrl:
+        type: string
+      bcIsActive:
+        type: boolean
+      subCategories:
+        type: array
+        items:
+          $ref: '#/definitions/SubCategory'
+  SubCategory:
+    type: object
+    properties:
+      scId:
+        type: integer
+      scName:
+        type: string
+      scImageUrl:
+        type: string
+      scIsActive:
+        type: boolean
+
