@@ -2,27 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3a11f88-ddb2-4fc2-81b3-c260960a0979" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/demo-go-service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/demo-server/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/get_categories.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/categories.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/category.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/sub_category.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restapi/configure_demo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restapi/doc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restapi/embedded_spec.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restapi/operations/demo_api.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restapi/operations/menu/category_list.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restapi/operations/menu/category_list_parameters.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restapi/operations/menu/category_list_responses.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restapi/operations/menu/category_list_urlbuilder.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restapi/server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swagger.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +39,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
@@ -80,6 +64,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added demo app" />
+    <option name="LAST_COMMIT_MESSAGE" value="added demo app" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
@@ -88,26 +76,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="414" y="179" width="1092" height="764" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/-1080.0.1080.1890@0.0.1920.1050" timestamp="1599753937062" />
+    <state x="585" y="21" key="CommitChangelistDialog2" timestamp="1599754313274">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="585" y="21" key="CommitChangelistDialog2/0.0.1920.1050/-1080.0.1080.1890@0.0.1920.1050" timestamp="1599754313274" />
     <state x="740" y="291" key="FileChooserDialogImpl" timestamp="1599753936117">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="291" key="FileChooserDialogImpl/0.0.1920.1050/-1080.0.1080.1890@0.0.1920.1050" timestamp="1599753936117" />
-    <state width="1877" height="278" key="GridCell.Tab.0.bottom" timestamp="1599753991800">
+    <state width="1877" height="278" key="GridCell.Tab.0.bottom" timestamp="1599754330466">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1080.0.1080.1890@0.0.1920.1050" timestamp="1599753991800" />
-    <state width="1877" height="278" key="GridCell.Tab.0.center" timestamp="1599753991800">
+    <state width="1877" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1080.0.1080.1890@0.0.1920.1050" timestamp="1599754330466" />
+    <state width="1877" height="278" key="GridCell.Tab.0.center" timestamp="1599754330466">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.center/0.0.1920.1050/-1080.0.1080.1890@0.0.1920.1050" timestamp="1599753991800" />
-    <state width="1877" height="278" key="GridCell.Tab.0.left" timestamp="1599753991800">
+    <state width="1877" height="278" key="GridCell.Tab.0.center/0.0.1920.1050/-1080.0.1080.1890@0.0.1920.1050" timestamp="1599754330466" />
+    <state width="1877" height="278" key="GridCell.Tab.0.left" timestamp="1599754330466">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.left/0.0.1920.1050/-1080.0.1080.1890@0.0.1920.1050" timestamp="1599753991800" />
-    <state width="1877" height="278" key="GridCell.Tab.0.right" timestamp="1599753991800">
+    <state width="1877" height="278" key="GridCell.Tab.0.left/0.0.1920.1050/-1080.0.1080.1890@0.0.1920.1050" timestamp="1599754330466" />
+    <state width="1877" height="278" key="GridCell.Tab.0.right" timestamp="1599754330466">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.right/0.0.1920.1050/-1080.0.1080.1890@0.0.1920.1050" timestamp="1599753991800" />
+    <state width="1877" height="278" key="GridCell.Tab.0.right/0.0.1920.1050/-1080.0.1080.1890@0.0.1920.1050" timestamp="1599754330466" />
     <state width="1877" height="344" key="GridCell.Tab.1.bottom" timestamp="1599753801296">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -124,6 +116,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="344" key="GridCell.Tab.1.right/0.0.1920.1050/-1080.0.1080.1890@0.0.1920.1050" timestamp="1599753801296" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1599754317883">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1080.0.1080.1890@0.0.1920.1050" timestamp="1599754317883" />
     <state x="668" y="242" width="583" height="566" key="find.popup" timestamp="1599753894437">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
