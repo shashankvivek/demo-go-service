@@ -1,0 +1,30 @@
+export proj_id=qwiklabs-gcp-01-e01d9484888e
+export user_id=student_01_f2b54ab9899d
+export my_zone=us-central1-a
+
+gcloud config set project $proj_id
+
+gcloud container clusters create my-demo-gke \
+   --num-nodes 1 \
+   --enable-basic-auth \
+   --issue-client-certificate \
+   --zone $my_zone
+
+
+git clone https://github.com/shashankvivek/demo-go-service.git
+
+cd demo-go-service
+
+go get ./...
+
+env CGO_ENABLED=0 GOOS=linux go build -a -o ./main ./cmd/demo-server/...
+
+//go build -a -o /home/$user_id/demo-go-service/main ./cmd/e-food-server/...
+
+docker build -f "./Dockerfile" -t gcr.io/$proj_id/my-demo-gke:latest .
+
+// run locally
+
+docker run -it gcr.io/$proj_id/my-demo-gke:latest sh
+
+gcloud docker -- push gcr.io/$proj_id/my-demo-gke:latest
